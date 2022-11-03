@@ -1,40 +1,15 @@
-# Go Daemonizer
+# Varnish Router Grpc Structure
 
-```
-Run the daemon
+## 1. Introduction
 
-Run the daemon with the following command:
+Varnish Router gRPC is a gRPC client for Varnish Router plugin creation.
 
-go run daemon.go sleep 10
+## 2. Installation
 
-The command will run for 10 seconds and then exit.
+### 2.1. Requirements
 
-Check the process
-
-Check the process with the following command:
-
-ps -ef | grep sleep
-
-You should see the following output:
-
-501  8717  8716   0  8:50PM ttys005    0:00.00 sleep 10
-501  8727  8441   0  8:50PM ttys006    0:00.00 grep sleep
-
-The process is running as a daemon.
-
-Kill the process
-
-Kill the process with the following command:
-
-kill -9 8717
-
-Check the process
-
-Check the process with the following command:
-
-ps -ef | grep sleep
-
-You should see the following output:
-
-501  8727  8441   0  8:50PM ttys
-```
+    * GO 1.13 or higher
+    * Protoc 3.11.4 or higher
+    * Protoc-gen-go 1.3.2 or higher
+    * Varnish console
+    * Varnish Router plugin
